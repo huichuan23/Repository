@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HM 私人 AI 穿搭</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <button class="icon-button" aria-label="打开菜单" data-tooltip="菜单">
+          <i data-lucide="menu"></i>
+        </button>
+        <div>
+          <p class="eyebrow">上海 · 26°C</p>
+          <h1>今日穿搭</h1>
+        </div>
+        <button class="avatar-button" aria-label="个人风格档案" data-tooltip="档案">
+          <img
+            src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=160&q=80"
+            alt=""
+          />
+        </button>
+      </header>
+
+      <section class="recommendation" aria-label="AI 推荐穿搭">
+        <div class="look-visual">
+          <img
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85"
+            alt="深色外套与牛仔裤的通勤穿搭"
+          />
+          <div class="look-score">
+            <span>92</span>
+            <small>适配</small>
+          </div>
+        </div>
+        <div class="look-copy">
+          <div>
+            <p class="eyebrow">OpenAI 推荐</p>
+          <h2>明亮休闲，适合轻松日程</h2>
+          </div>
+          <p>
+            高饱和黄色提升精神感，短上衣和同色长裤拉高比例，适合周末出门或轻运动。
+          </p>
+        </div>
+        <div class="look-actions">
+          <button class="primary-action">
+            <i data-lucide="sparkles"></i>
+            换一套
+          </button>
+          <button class="icon-button" aria-label="收藏这套穿搭" data-tooltip="收藏">
+            <i data-lucide="heart"></i>
+          </button>
+          <button class="icon-button" aria-label="不喜欢这套穿搭" data-tooltip="反馈">
+            <i data-lucide="thumbs-down"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="quick-context" aria-label="穿搭场景">
+        <button class="context-pill">上班</button>
+        <button class="context-pill">约会</button>
+        <button class="context-pill active">周末</button>
+        <button class="context-pill">正式</button>
+      </section>
+
+      <section class="panel" aria-label="今日衣柜">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">已选单品</p>
+            <h3>3 件搭配</h3>
+          </div>
+          <button class="icon-button small" aria-label="编辑搭配" data-tooltip="编辑">
+            <i data-lucide="pencil"></i>
+          </button>
+        </div>
+        <div class="item-row">
+          <article class="closet-item">
+            <img
+              src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=400&q=80"
+              alt="深灰外套"
+            />
+            <span>深灰外套</span>
+          </article>
+          <article class="closet-item">
+            <img
+              src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80"
+              alt="白色内搭"
+            />
+            <span>白色内搭</span>
+          </article>
+          <article class="closet-item">
+            <img
+              src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=400&q=80"
+              alt="直筒牛仔裤"
+            />
+            <span>直筒牛仔裤</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="insight-grid" aria-label="穿搭洞察">
+        <article class="metric">
+          <i data-lucide="shirt"></i>
+          <span>128</span>
+          <p>衣柜单品</p>
+        </article>
+        <article class="metric">
+          <i data-lucide="repeat-2"></i>
+          <span>73%</span>
+          <p>复穿率</p>
+        </article>
+        <article class="metric">
+          <i data-lucide="palette"></i>
+          <span>冷灰</span>
+          <p>今日主色</p>
+        </article>
+      </section>
+
+      <section class="panel feedback-panel" aria-label="反馈">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">快速反馈</p>
+            <h3>这套感觉怎么样？</h3>
+          </div>
+        </div>
+        <div class="feedback-options">
+          <button aria-label="喜欢">
+            <i data-lucide="smile"></i>
+            <span>喜欢</span>
+          </button>
+          <button aria-label="太正式">
+            <i data-lucide="briefcase"></i>
+            <span>太正式</span>
+          </button>
+          <button aria-label="显矮">
+            <i data-lucide="move-down"></i>
+            <span>显矮</span>
+          </button>
+        </div>
+      </section>
+
+      <nav class="tabbar" aria-label="主导航">
+        <button class="active" aria-label="今日">
+          <i data-lucide="home"></i>
+          <span>今日</span>
+        </button>
+        <button aria-label="衣柜">
+          <i data-lucide="archive"></i>
+          <span>衣柜</span>
+        </button>
+        <button class="scan" aria-label="上传衣服">
+          <i data-lucide="camera"></i>
+        </button>
+        <button aria-label="灵感">
+          <i data-lucide="wand-sparkles"></i>
+          <span>灵感</span>
+        </button>
+        <button aria-label="我的">
+          <i data-lucide="user-round"></i>
+          <span>我的</span>
+        </button>
+      </nav>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
