@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { getOpenAIClient, recommendationModel } from "@/lib/openai";
 import { getSupabaseAdmin } from "@/lib/supabaseAdmin";
 
+export const runtime = "nodejs";
+
 type RecommendationRequest = {
   occasion: string;
   weather?: string;

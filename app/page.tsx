@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Archive,
   Briefcase,
@@ -101,9 +102,9 @@ export default function HomePage() {
             <p className="eyebrow">已选单品</p>
             <h3>3 件搭配</h3>
           </div>
-          <button className="icon-button small" aria-label="编辑搭配">
+          <Link className="icon-button small" href="/closet" aria-label="编辑衣柜">
             <Pencil />
-          </button>
+          </Link>
         </div>
         <div className="item-row">
           {closetItems.map((item) => (
@@ -161,13 +162,13 @@ export default function HomePage() {
           <Home />
           <span>今日</span>
         </button>
-        <button aria-label="衣柜">
+        <Link href="/closet" aria-label="衣柜">
           <Archive />
           <span>衣柜</span>
-        </button>
-        <button className="scan" aria-label="上传衣服">
+        </Link>
+        <Link className="scan" href="/closet" aria-label="上传衣服">
           <Camera />
-        </button>
+        </Link>
         <button aria-label="灵感">
           <WandSparkles />
           <span>灵感</span>

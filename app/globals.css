@@ -28,11 +28,13 @@ body {
     Inter, "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
 }
 
-button {
+button,
+a {
   border: 0;
   color: inherit;
   cursor: pointer;
   font: inherit;
+  text-decoration: none;
 }
 
 img {
@@ -354,7 +356,9 @@ h3 {
   backdrop-filter: blur(16px);
 }
 
-.tabbar button {
+.tabbar button,
+.tabbar a,
+.tabbar label {
   display: grid;
   place-items: center;
   align-content: center;
@@ -366,7 +370,8 @@ h3 {
   font-weight: 750;
 }
 
-.tabbar button.active {
+.tabbar button.active,
+.tabbar a.active {
   color: var(--terracotta);
 }
 
@@ -384,6 +389,169 @@ h3 {
 .tabbar .scan svg {
   width: 23px;
   height: 23px;
+}
+
+.closet-shell {
+  padding-bottom: 104px;
+}
+
+.quiet {
+  color: var(--sage);
+}
+
+.upload-panel {
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 14px;
+}
+
+.photo-drop {
+  display: grid;
+  place-items: center;
+  min-height: 270px;
+  border: 1px dashed #c8c4bd;
+  border-radius: 8px;
+  background: #fdfbf7;
+  color: var(--muted);
+  overflow: hidden;
+}
+
+.photo-drop input {
+  display: none;
+}
+
+.photo-drop span {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.photo-drop svg {
+  width: 34px;
+  height: 34px;
+  color: var(--terracotta);
+}
+
+.photo-drop img {
+  width: 100%;
+  height: 100%;
+  max-height: 360px;
+  object-fit: cover;
+}
+
+.upload-action {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.upload-action:disabled {
+  cursor: wait;
+  opacity: 0.76;
+}
+
+.status-message {
+  margin: 10px 0 0;
+  color: #4a4f57;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.closet-list-panel {
+  margin-top: 16px;
+}
+
+.closet-list-panel .section-heading > svg {
+  width: 22px;
+  height: 22px;
+  color: var(--sage);
+}
+
+.wardrobe-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.wardrobe-card {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 12px;
+  align-items: center;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgba(34, 36, 41, 0.06);
+}
+
+.wardrobe-card img,
+.image-placeholder {
+  width: 92px;
+  aspect-ratio: 1 / 1.15;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--sky);
+}
+
+.image-placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+}
+
+.wardrobe-card h2 {
+  margin: 2px 0 8px;
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+.item-category {
+  margin: 0;
+  color: var(--terracotta);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag-row span {
+  border-radius: 999px;
+  background: #eef3eb;
+  color: #40513c;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 8px;
+}
+
+.empty-state {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  min-height: 140px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.empty-state svg {
+  width: 26px;
+  height: 26px;
+}
+
+.spin {
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 760px) {

@@ -60,6 +60,19 @@ GET /api/clothing-items
 POST /api/clothing-items
 ```
 
+也可以直接上传一张衣服照片，后端会保存图片并调用 OpenAI 自动识别品类、颜色、版型、季节、风格和场景：
+
+```http
+POST /api/clothing-items
+Content-Type: multipart/form-data
+```
+
+字段：
+
+```text
+image=<衣服照片>
+```
+
 生成穿搭：
 
 ```http
